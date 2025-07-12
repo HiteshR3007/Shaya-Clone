@@ -1,11 +1,11 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
+import Slider from '../components/Slider';
 import ProductGrid from "../components/ProductGrid";
 
 const Home = () => {
   return (
     <>
-      <HeroSection />
+      <Slider/>
       <ProductGrid />
     </>
   );

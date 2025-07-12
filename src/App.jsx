@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import CartPage from './pages/CartPage.jsx';
 import Footer from './components/Footer.jsx';
 
-
 function App() {
   return (
     <>
