@@ -4,6 +4,7 @@ import { FaUser, FaSearch, FaHeart, FaShoppingBag } from "react-icons/fa";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext.jsx";
 import { Link } from "react-router-dom";
+import caratlaneLogo from "../assets/caratlane.png";
 
 const Navbar = () => {
 
@@ -33,7 +34,7 @@ const Navbar = () => {
       <div className="nav-right">
         <FaUser size={27} />
         <div className="divider" />
-        <img src="/caratlane.png" alt="shaya" className="brand-icon" />
+        <img src={caratlaneLogo} alt="shaya" className="brand-icon" />
         <FaSearch size={27} />
         <div className="icon-wrap">
           <FaHeart size={27} />
