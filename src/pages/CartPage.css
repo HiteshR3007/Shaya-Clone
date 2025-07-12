@@ -1,0 +1,105 @@
+.cart-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.cart-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  align-items: flex-start;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  flex: 1;
+}
+
+.details h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #111;
+}
+
+.details p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.quantity-controls button {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #444;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+h3:last-of-type {
+  text-align: right;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-item img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
